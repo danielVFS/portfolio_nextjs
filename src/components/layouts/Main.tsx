@@ -1,9 +1,10 @@
 import { Box, Container } from "@chakra-ui/react";
 import Head from "next/head";
+import { Router } from "next/router";
 
 interface MainProps {
   children: React.ReactNode;
-  router: any;
+  router: Router;
 }
 
 export function Main({ children, router }: MainProps) {
