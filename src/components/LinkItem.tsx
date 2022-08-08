@@ -4,19 +4,29 @@ import NextLink from "next/link";
 interface LinkItemProps {
   href: string;
   path: string;
+  target?: string;
   children: React.ReactNode;
+  [x: string]: any;
 }
 
-export function LinkItem({ href, path, children, ...props }: LinkItemProps) {
+export function LinkItem({
+  href,
+  path,
+  target,
+  children,
+  ...props
+}: LinkItemProps) {
   const active = path === "href";
-  const inactiveColor = useColorModeValue("gray.200", "whiteAlpha.200");
+  const inactiveColor = useColorModeValue("gray200", "whiteAlpha.900");
 
   return (
-    <NextLink href={href}>
+    <NextLink href={href} passHref scroll={false}>
       <Link
         p={2}
         bg={active ? "glassTeal" : undefined}
         color={active ? "#202023" : inactiveColor}
+        target={target}
+        {...props}
       >
         {children}
       </Link>
