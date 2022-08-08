@@ -13,7 +13,7 @@ const Home: NextPage = () => {
           <Heading as="h2" variant="page-title">
             Daniel Vitor
           </Heading>
-          <p>Desenvolvedor Frontend (React.js/Angular)</p>
+          <p>Desenvolvedor Frontend (React.js / Angular)</p>
         </Box>
       </Box>
     </Container>
