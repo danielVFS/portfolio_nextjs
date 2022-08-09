@@ -33,6 +33,7 @@ const LogoBox = styled.div`
   height: 30px;
   line-height: 20px;
   padding: 10px;
+  gap: 5px;
 
   &:hover img {
     transform: rotate(20deg);
