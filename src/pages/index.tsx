@@ -1,10 +1,16 @@
-import { Box, Container, Heading } from "@chakra-ui/react";
+import { Box, Container, Heading, useColorModeValue } from "@chakra-ui/react";
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
     <Container>
-      <Box borderRadius="lg" bg="red" p={3} mb={6} textAlign="center">
+      <Box
+        borderRadius="lg"
+        bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
+        p={3}
+        mb={6}
+        textAlign="center"
+      >
         Olá, Sou o Daniel, um desenvolvedor frontend que mora no Brasil!
       </Box>
 
