@@ -36,7 +36,7 @@ export function Navbar({ path, ...props }: NavbarProps) {
     >
       <Container
         display="flex"
-        maxW="container.md"
+        maxW="1200px"
         flexWrap="wrap"
         alignItems="center"
         justifyContent="space-between"
@@ -56,6 +56,9 @@ export function Navbar({ path, ...props }: NavbarProps) {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
+          <LinkItem href="/" path={path}>
+            Habilidades
+          </LinkItem>
           <LinkItem href="/works" path={path}>
             Projetos
           </LinkItem>
@@ -94,7 +97,7 @@ export function Navbar({ path, ...props }: NavbarProps) {
                   href="https://github.com/danielVFS/portfolio_nextjs"
                   passHref
                 >
-                  <MenuItem as={Link}> Ver código</MenuItem>
+                  <MenuItem as={Link}>Ver código</MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>

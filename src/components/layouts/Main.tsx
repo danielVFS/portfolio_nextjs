@@ -18,7 +18,7 @@ export function Main({ children, router }: MainProps) {
 
       <Navbar path={router.asPath} />
 
-      <Container maxW="container.md" pt={14}>
+      <Container maxW="1200px" pt={14}>
         {children}
       </Container>
     </Box>
