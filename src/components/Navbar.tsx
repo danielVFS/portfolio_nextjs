@@ -17,6 +17,7 @@ import NextLink from "next/link";
 import { IoLogoGithub } from "react-icons/io5";
 import { LinkItem } from "./LinkItem";
 import { Logo } from "./Logo";
+import { ThemeToggleButton } from "./ThemeToggleButton";
 
 interface NavbarProps {
   path: string;
@@ -31,7 +32,6 @@ export function Navbar({ path, ...props }: NavbarProps) {
       bg={useColorModeValue("#ffffff40", "#20202328")}
       style={{ backdropFilter: "blur(10px)" }}
       zIndex={1}
-      mt={1}
       {...props}
     >
       <Container
@@ -40,6 +40,7 @@ export function Navbar({ path, ...props }: NavbarProps) {
         flexWrap="wrap"
         alignItems="center"
         justifyContent="space-between"
+        p={2}
       >
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={"tighter"}>
@@ -73,6 +74,7 @@ export function Navbar({ path, ...props }: NavbarProps) {
         </Stack>
 
         <Box display="flex" flex={1} justifyContent="flex-end">
+          <ThemeToggleButton />
           <Box ml={2} display={{ base: "inline-block", md: "none" }}>
             <Menu id="navbar-menu">
               <MenuButton
@@ -92,9 +94,7 @@ export function Navbar({ path, ...props }: NavbarProps) {
                   href="https://github.com/danielVFS/portfolio_nextjs"
                   passHref
                 >
-                  <a target="_blank">
-                    <MenuItem as={Link}> Ver código</MenuItem>
-                  </a>
+                  <MenuItem as={Link}> Ver código</MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>

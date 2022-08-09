@@ -8,6 +8,7 @@ const Home: NextPage = () => {
         borderRadius="lg"
         bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
         p={3}
+        mt={6}
         mb={6}
         textAlign="center"
       >
