@@ -2,7 +2,7 @@ import { Box, Link, Text, useColorModeValue } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { Label } from "./Label";
 
-export function Bio() {
+export default function Bio() {
   return (
     <Box
       borderRadius="lg"
