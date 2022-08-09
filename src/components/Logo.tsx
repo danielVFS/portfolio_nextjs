@@ -14,6 +14,7 @@ export function Logo() {
           <Text
             color={useColorModeValue("gray.800", "whiteAlpha.900")}
             fontWeight="semibold"
+            fontFamily='M PLUS Rounded 1c", sans-serif'
             ml={3}
           >
             Daniel Vitor
