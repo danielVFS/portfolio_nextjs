@@ -1,5 +1,7 @@
+import { DownloadIcon } from "@chakra-ui/icons";
 import {
   Box,
+  Button,
   Flex,
   Heading,
   Image,
@@ -42,6 +44,18 @@ export default function Bio() {
           </NextLink>
           do IFG câmpus Anápolis.
         </Text>
+
+        <Button
+          w="180px"
+          height="45px"
+          rightIcon={<DownloadIcon />}
+          bg={useColorModeValue("purple.500", "greenLigth600")}
+          _hover={{ bg: useColorModeValue("purple.700", "greenLigth700") }}
+          color={useColorModeValue("whiteAlpha.900", "whiteAlpha.900")}
+          mt={8}
+        >
+          Download CV
+        </Button>
       </Text>
 
       <Box>
@@ -49,7 +63,7 @@ export default function Bio() {
           src="/images/profile.jpg"
           alt="Profile image"
           mt={[8, 8, 0]}
-          borderColor={useColorModeValue("whiteAlpha.800", "greenLigth")}
+          borderColor={useColorModeValue("whiteAlpha.800", "greenLigth400")}
           borderWidth={3}
           borderStyle="solid"
           maxW={["120px", "120px", "150px"]}
