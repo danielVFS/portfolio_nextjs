@@ -3,6 +3,9 @@ import { mode } from "@chakra-ui/theme-tools";
 
 const styles = {
   global: (props: any) => ({
+    html: {
+      scrollBehavior: "smooth",
+    },
     body: {
       bg: mode("#d3d3d3", "#202023")(props),
     },
