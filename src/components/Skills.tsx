@@ -23,26 +23,40 @@ export function Skills() {
   const color = useColorModeValue("whiteAlpha.500", "whiteAlpha.200");
 
   return (
-    <Flex flexWrap="wrap" mt={12} mb={8} gap={12}>
+    <Flex
+      flexWrap="wrap"
+      align="center"
+      justify="center"
+      mt={12}
+      mb={8}
+      gap={12}
+    >
       {skills.map((skill) => {
         return (
-          <Flex flexDir="column" align="center" gap={2} key={skill.tech}>
+          <Flex flexDir="column" gap={2} key={skill.tech}>
             <Flex
               bg={color}
               borderRadius="full"
-              w="90px"
-              h="90px"
+              w="80px"
+              h="80px"
               align="center"
               justify="center"
             >
               <Image
                 src={`/images/${skill.image}.png`}
                 alt="Profile image"
-                w="50px"
-                h="50px"
+                w="40px"
+                h="40px"
+                transition="0.1s all"
+                _hover={{ transform: "rotate(20deg)" }}
               />
             </Flex>
-            <Text maxW={"900px"} textAlign="center">
+            <Text
+              maxW={"80px"}
+              textAlign="center"
+              fontSize="sm"
+              fontWeight="bold"
+            >
               {skill.tech}
             </Text>
           </Flex>

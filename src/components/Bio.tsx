@@ -1,25 +1,35 @@
-import { Box, Link, Text, useColorModeValue } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  Image,
+  Link,
+  Text,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import NextLink from "next/link";
 import { Label } from "./Label";
 
 export default function Bio() {
   return (
-    <Box
+    <Flex
+      h="400px"
+      flexDir={["column", "column", "row"]}
+      align="center"
+      justify={["center", "center", "space-between"]}
       borderRadius="lg"
-      bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
-      p={3}
     >
       <Text lineHeight="1.7">
-        <Text as="span" fontWeight="bold" fontSize="2xl">
-          Sou&nbsp;
-        </Text>
-        <Text as="span" variant="userName">
-          Daniel Vitor Ferreira Silva
-        </Text>
+        <Box>
+          <Heading as="h2">Daniel Vitor</Heading>
+          <Text fontWeight="300" fontStyle="oblique">
+            Desenvolvedor Frontend (React.js / Angular)
+          </Text>
+        </Box>
         <Text mt={2}>
           Tenho 21 anos,
-          <Text as="span" variant="job">
-            sou Dev Frontend
+          <Text as="span" fontWeight="bold">
+            &nbsp;sou Dev Frontend
           </Text>
           ,&nbsp;com 1 ano de experiência com <Label>REACT.JS</Label>
           &nbsp;e&nbsp;
@@ -33,6 +43,21 @@ export default function Bio() {
           do IFG câmpus Anápolis.
         </Text>
       </Text>
-    </Box>
+
+      <Box>
+        <Image
+          src="/images/profile.jpg"
+          alt="Profile image"
+          mt={[8, 8, 0]}
+          borderColor={useColorModeValue("whiteAlpha.800", "greenLigth")}
+          borderWidth={3}
+          borderStyle="solid"
+          maxW={["120px", "120px", "150px"]}
+          borderRadius="full"
+          transition="0.2s all"
+          _hover={{ transform: "scale(1.1)" }}
+        />
+      </Box>
+    </Flex>
   );
 }

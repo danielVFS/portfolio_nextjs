@@ -23,23 +23,8 @@ const components = {
       },
     },
   },
-  Text: {
-    variants: {
-      userName: (props: any) => ({
-        fontSize: 24,
-        fontWeight: "bold",
-        color: mode("darkBlue", "greenLigth")(props),
-      }),
-      job: (props: any) => ({
-        fontSize: 18,
-        fontWeight: "bold",
-        color: mode("darkBlue", "greenLigth")(props),
-      }),
-    },
-  },
   Link: {
     baseStyle: (props: any) => ({
-      color: mode("darkBlue", "greenLigth")(props),
       fontWeight: "bold",
     }),
   },
@@ -53,8 +38,6 @@ const fonts = {
 const colors = {
   grassTeal: "#88ccca",
   greenLigth: "#7CB591",
-  darkBlue: "#3d7aed",
-  darkAqua: "#163840",
 };
 
 const config: ThemeConfig = {

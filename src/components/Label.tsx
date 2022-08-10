@@ -8,11 +8,10 @@ export function Label({ children }: LabelProps) {
   return (
     <Box
       as="span"
-      bg={useColorModeValue("whiteAlpha.900", "darkAqua")}
       py={1}
       px={2}
       borderRadius={4}
-      color={useColorModeValue("darkBlue", "greenLigth")}
+      color={useColorModeValue("purple.600", "greenLigth")}
       fontWeight="bold"
     >
       {children}

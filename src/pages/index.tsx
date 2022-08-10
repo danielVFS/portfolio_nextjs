@@ -1,21 +1,18 @@
 import { Container, Heading } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import dynamic from "next/dynamic";
-import { Profile } from "../components/Profile";
 import { Section } from "../components/Section";
 import { SkillsAndExperience } from "../components/SkillsAndExperience";
 
-const DynamicBio = dynamic(() => import("../components/Bio"), {
+const Bio = dynamic(() => import("../components/Bio"), {
   ssr: false,
 });
 
 const Home: NextPage = () => {
   return (
     <>
-      <Container maxW="800px" display="flex" flexDir="column" gap={6} mt={6}>
-        <DynamicBio />
-
-        <Profile />
+      <Container maxW="1200px" display="flex" flexDir="column" gap={6} mt={6}>
+        <Bio />
       </Container>
       <Container maxW="1200px" display="flex" flexDir="column" gap={6} mt={6}>
         <Section delay="0.1">
