@@ -4,16 +4,6 @@ import { Timeline } from "./Timeline";
 
 const jobs = [
   {
-    initialDate: "2020",
-    finalDate: "2021",
-    occupation: "Desenvolvedor Fullstack",
-    at: "Freelancer",
-    stack: [
-      { tech: "React.js", image: "react" },
-      { tech: "Spring Boot", image: "spring-boot" },
-    ],
-  },
-  {
     initialDate: "2021",
     finalDate: "Atual",
     occupation: "Desenvolvedor Frontend",
@@ -21,6 +11,16 @@ const jobs = [
     stack: [
       { tech: "React.js", image: "react" },
       { tech: "Angular", image: "angular" },
+    ],
+  },
+  {
+    initialDate: "2020",
+    finalDate: "2021",
+    occupation: "Desenvolvedor Fullstack",
+    at: "Freelancer",
+    stack: [
+      { tech: "React.js", image: "react" },
+      { tech: "Spring Boot", image: "spring-boot" },
     ],
   },
 ];
