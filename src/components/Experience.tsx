@@ -1,30 +1,52 @@
-import { Flex, useColorModeValue } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
+import { ExperienceDescription } from "./ExperienceDescription";
+import { Timeline } from "./Timeline";
 
-const skills = [
-  { tech: "Javascript", image: "javascript" },
-  { tech: "Typescript", image: "typescript" },
-  { tech: "HTML", image: "html" },
-  { tech: "CSS", image: "css" },
-  { tech: "Git", image: "git" },
-  { tech: "Figma", image: "figma" },
-  { tech: "Sass", image: "sass" },
-  { tech: "Java", image: "java" },
-  { tech: "Spring Boot", image: "spring-boot" },
-  { tech: "Angular", image: "angular" },
-  { tech: "React.js", image: "react" },
-  { tech: "Redux", image: "redux" },
-  { tech: "Chakra UI", image: "chakra" },
-  { tech: "Material UI", image: "mu5" },
-  { tech: "Styled Components", image: "styled-components" },
-  { tech: "Framer Motion", image: "framer" },
+const jobs = [
+  {
+    initialDate: "2020",
+    finalDate: "2021",
+    occupation: "Desenvolvedor Fullstack",
+    at: "Freelancer",
+    stack: [
+      { tech: "React.js", image: "react" },
+      { tech: "Spring Boot", image: "spring-boot" },
+    ],
+  },
+  {
+    initialDate: "2021",
+    finalDate: "Atual",
+    occupation: "Desenvolvedor Frontend",
+    at: "GoGeo",
+    stack: [
+      { tech: "React.js", image: "react" },
+      { tech: "Angular", image: "angular" },
+    ],
+  },
 ];
 
 export function Experience() {
-  const color = useColorModeValue("whiteAlpha.500", "whiteAlpha.200");
-
   return (
-    <Flex flexWrap="wrap" mt={12} mb={8} gap={8}>
-      <p>Experience</p>
+    <Flex
+      mt={12}
+      mb={8}
+      gap={16}
+      flexDir="column"
+      align="center"
+      justify="center"
+    >
+      {jobs.map((job, idx) => {
+        return (
+          <Flex gap={6} key={idx} align="center" justify="center">
+            <Timeline initialDate={job.initialDate} finalDate={job.finalDate} />
+            <ExperienceDescription
+              occupation={job.occupation}
+              at={job.at}
+              stack={job.stack}
+            />
+          </Flex>
+        );
+      })}
     </Flex>
   );
 }

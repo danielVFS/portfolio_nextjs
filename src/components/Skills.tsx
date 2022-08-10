@@ -7,7 +7,6 @@ const skills = [
   { tech: "CSS", image: "css" },
   { tech: "Git", image: "git" },
   { tech: "Figma", image: "figma" },
-  { tech: "Sass", image: "sass" },
   { tech: "Java", image: "java" },
   { tech: "Spring Boot", image: "spring-boot" },
   { tech: "Angular", image: "angular" },
@@ -15,8 +14,6 @@ const skills = [
   { tech: "Redux", image: "redux" },
   { tech: "Chakra UI", image: "chakra" },
   { tech: "Material UI", image: "mu5" },
-  { tech: "Styled Components", image: "styled-components" },
-  { tech: "Framer Motion", image: "framer" },
 ];
 
 export function Skills() {
@@ -52,7 +49,7 @@ export function Skills() {
               />
             </Flex>
             <Text
-              maxW={"80px"}
+              maxW={"85px"}
               textAlign="center"
               fontSize="sm"
               fontWeight="bold"
