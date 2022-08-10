@@ -56,7 +56,7 @@ export function Navbar({ path, ...props }: NavbarProps) {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/" path={path}>
+          <LinkItem href="#skills" path={path}>
             Habilidades
           </LinkItem>
           <LinkItem href="/works" path={path}>

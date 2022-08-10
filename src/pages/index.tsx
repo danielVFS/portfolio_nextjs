@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <Bio />
       </Container>
       <Container maxW="1200px" display="flex" flexDir="column" gap={6} mt={6}>
-        <Section delay="0.1">
+        <Section id="skills" delay="0.1">
           <Heading as="h3" variant="section-title">
             Habilidades e Experiências
           </Heading>
