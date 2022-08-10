@@ -1,16 +1,18 @@
 import { Text, useColorModeValue } from "@chakra-ui/react";
 import styled from "@emotion/styled";
-import Image from "next/image";
 import Link from "next/link";
 
 export function Logo() {
-  const logoImg = `/images/d-logo.png`;
-
   return (
     <Link href="/">
-      <a>
+      <a
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <LogoBox>
-          <Image src={logoImg} width={25} height={25} alt="logo" />
           <Text
             color={useColorModeValue("gray.800", "whiteAlpha.900")}
             fontWeight="semibold"
