@@ -23,26 +23,28 @@ export function Skills() {
   const color = useColorModeValue("whiteAlpha.500", "whiteAlpha.200");
 
   return (
-    <Flex flexWrap="wrap" mt={12} mb={8} gap={8}>
+    <Flex flexWrap="wrap" mt={12} mb={8} gap={12}>
       {skills.map((skill) => {
         return (
           <Flex flexDir="column" align="center" gap={2} key={skill.tech}>
             <Flex
               bg={color}
               borderRadius="full"
-              w="100px"
-              h="100px"
+              w="90px"
+              h="90px"
               align="center"
               justify="center"
             >
               <Image
                 src={`/images/${skill.image}.png`}
                 alt="Profile image"
-                w="60px"
-                h="60px"
+                w="50px"
+                h="50px"
               />
             </Flex>
-            <Text>{skill.tech}</Text>
+            <Text maxW={"900px"} textAlign="center">
+              {skill.tech}
+            </Text>
           </Flex>
         );
       })}

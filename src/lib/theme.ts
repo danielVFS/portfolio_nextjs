@@ -47,11 +47,12 @@ const components = {
 
 const fonts = {
   heading: "'M PLUS Rounded 1c'",
+  body: "'M PLUS Rounded 1c'",
 };
 
 const colors = {
   grassTeal: "#88ccca",
-  greenLigth: "#35F7C2",
+  greenLigth: "#7CB591",
   darkBlue: "#3d7aed",
   darkAqua: "#163840",
 };

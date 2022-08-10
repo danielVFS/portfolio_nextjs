@@ -3,7 +3,7 @@ import type { NextPage } from "next";
 import dynamic from "next/dynamic";
 import { Profile } from "../components/Profile";
 import { Section } from "../components/Section";
-import { Skills } from "../components/Skills";
+import { SkillsAndExperience } from "../components/SkillsAndExperience";
 
 const DynamicBio = dynamic(() => import("../components/Bio"), {
   ssr: false,
@@ -22,7 +22,7 @@ const Home: NextPage = () => {
           <Heading as="h3" variant="section-title">
             Habilidades e Experiências
           </Heading>
-          <Skills />
+          <SkillsAndExperience />
         </Section>
       </Container>
     </>
