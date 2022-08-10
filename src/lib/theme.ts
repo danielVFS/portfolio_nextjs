@@ -31,8 +31,8 @@ const components = {
 };
 
 const fonts = {
-  // heading: "'M PLUS Rounded 1c'",
-  // body: "'M PLUS Rounded 1c'",
+  heading: "'Poppins'",
+  body: "'Poppins'",
 };
 
 const colors = {
