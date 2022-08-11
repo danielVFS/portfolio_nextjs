@@ -12,6 +12,7 @@ const skills = [
   { tech: "Angular", image: "angular" },
   { tech: "React.js", image: "react" },
   { tech: "Redux", image: "redux" },
+  { tech: "Next.js", image: "next-js" },
   { tech: "Chakra UI", image: "chakra" },
   { tech: "Material UI", image: "mu5" },
 ];
