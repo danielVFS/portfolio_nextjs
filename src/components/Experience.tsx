@@ -12,6 +12,9 @@ const jobs = [
       { tech: "React.js", image: "react" },
       { tech: "Next.js", image: "next-js" },
       { tech: "Redux", image: "redux" },
+      { tech: "Storybook", image: "storybook" },
+      { tech: "Figma", image: "figma" },
+      { tech: "Jest", image: "jest" },
       { tech: "Angular", image: "angular" },
     ],
   },
@@ -34,7 +37,7 @@ export function Experience() {
       mb={8}
       gap={16}
       flexDir="column"
-      align="center"
+      align="flex-start"
       justify="center"
     >
       {jobs.map((job, idx) => {

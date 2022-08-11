@@ -13,8 +13,11 @@ const skills = [
   { tech: "React.js", image: "react" },
   { tech: "Redux", image: "redux" },
   { tech: "Next.js", image: "next-js" },
+  { tech: "Storybook", image: "storybook" },
   { tech: "Chakra UI", image: "chakra" },
   { tech: "Material UI", image: "mu5" },
+  { tech: "GraphQL", image: "graphql" },
+  { tech: "Jest", image: "jest" },
 ];
 
 export function Skills() {
