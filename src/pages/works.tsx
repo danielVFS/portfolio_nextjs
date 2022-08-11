@@ -1,8 +1,8 @@
 import { Container, Heading } from "@chakra-ui/react";
 import type { NextPage } from "next";
+import { SkillsAndExperience } from "../components/home/SkillsAndExperience";
 import { Layout } from "../components/layouts/Layout";
 import { Section } from "../components/Section";
-import { SkillsAndExperience } from "../components/SkillsAndExperience";
 
 const Works: NextPage = () => {
   return (

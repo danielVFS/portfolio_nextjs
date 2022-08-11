@@ -1,5 +1,5 @@
 import { Flex, Heading, Text } from "@chakra-ui/react";
-import { StackList } from "./StackList";
+import { StackList } from "../StackList";
 
 interface ExperienceDescriptionProps {
   occupation: string;

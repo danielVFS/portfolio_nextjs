@@ -15,9 +15,9 @@ import {
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { IoLogoGithub } from "react-icons/io5";
-import { LinkItem } from "./LinkItem";
-import { Logo } from "./Logo";
-import { ThemeToggleButton } from "./ThemeToggleButton";
+import { LinkItem } from "../LinkItem";
+import { Logo } from "../Logo";
+import { ThemeToggleButton } from "../ThemeToggleButton";
 
 interface NavbarProps {
   path: string;

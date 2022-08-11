@@ -1,7 +1,7 @@
 import { Box, Container } from "@chakra-ui/react";
 import Head from "next/head";
 import { Router } from "next/router";
-import { Navbar } from "../Navbar";
+import { Navbar } from "./Navbar";
 
 interface MainProps {
   children: React.ReactNode;

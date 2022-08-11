@@ -10,7 +10,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
-import { Label } from "./Label";
+import { Label } from "../Label";
 
 export default function Bio() {
   return (

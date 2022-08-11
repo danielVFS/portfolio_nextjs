@@ -7,10 +7,10 @@ import {
 } from "@chakra-ui/react";
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { projects } from "../core/data/ProjectsData";
-import { StackList } from "./StackList";
+import { projects } from "../../core/data/ProjectsData";
+import { StackList } from "../StackList";
 
-export function ProjectsDemo() {
+export function WorksDemo() {
   const bgColorMode = useColorModeValue("purple.500", "greenLigth.600");
   const bgHoverColorMode = useColorModeValue("purple.700", "greenLigth.700");
   const colorMode = useColorModeValue("whiteAlpha.900", "whiteAlpha.900");

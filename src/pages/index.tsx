@@ -1,12 +1,12 @@
 import { Container, Heading } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import dynamic from "next/dynamic";
+import { SkillsAndExperience } from "../components/home/SkillsAndExperience";
+import { WorksDemo } from "../components/home/WorksDemo";
 import { Layout } from "../components/layouts/Layout";
-import { ProjectsDemo } from "../components/ProjectsDemo";
 import { Section } from "../components/Section";
-import { SkillsAndExperience } from "../components/SkillsAndExperience";
 
-const Bio = dynamic(() => import("../components/Bio"), {
+const Bio = dynamic(() => import("../components/home/Bio"), {
   ssr: false,
 });
 
@@ -27,7 +27,7 @@ const Home: NextPage = () => {
           <Heading as="h3" mt={[16, 16, 0]} variant="section-title">
             Alguns Projetos
           </Heading>
-          <ProjectsDemo />
+          <WorksDemo />
         </Section>
       </Container>
       <Container maxW="1200px" display="flex" flexDir="column" gap={6} mt={6}>
