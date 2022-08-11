@@ -12,6 +12,7 @@ export function Meta({ children }: MetaProps) {
       alignItems="center"
       justifyContent="center"
       height="20px"
+      width="52px"
     >
       {children}
     </Badge>
