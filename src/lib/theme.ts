@@ -16,16 +16,16 @@ const styles = {
       right: "45px",
     },
     ".swiper-button-prev:after, .swiper-button-next:after": {
-      color: "#ffba08",
+      color: mode("purple.500", "greenLigth.400")(props),
     },
     ".swiper-pagination-bullet": {
       w: "12px",
       h: "12px",
-      bg: "#999999",
+      bg: "gray.400",
       opacity: "1",
     },
     ".swiper-pagination-bullet-active": {
-      background: "#ffba08",
+      bg: mode("purple.500", "greenLigth.400")(props),
     },
   }),
 };
