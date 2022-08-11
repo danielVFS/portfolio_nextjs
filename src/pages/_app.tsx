@@ -1,6 +1,9 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { AnimatePresence } from "framer-motion";
 import type { AppProps } from "next/app";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import { Fonts } from "../components/Fonts";
 import { Main } from "../components/layouts/Main";
 import theme from "../lib/theme";

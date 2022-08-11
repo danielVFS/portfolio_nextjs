@@ -9,6 +9,24 @@ const styles = {
     body: {
       bg: mode("#d3d3d3", "#202023")(props),
     },
+    ".swiper-button-prev": {
+      left: "45px",
+    },
+    ".swiper-button-next": {
+      right: "45px",
+    },
+    ".swiper-button-prev:after, .swiper-button-next:after": {
+      color: "#ffba08",
+    },
+    ".swiper-pagination-bullet": {
+      w: "12px",
+      h: "12px",
+      bg: "#999999",
+      opacity: "1",
+    },
+    ".swiper-pagination-bullet-active": {
+      background: "#ffba08",
+    },
   }),
 };
 
