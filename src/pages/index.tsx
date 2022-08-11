@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         <Bio />
 
         <Section id="skills" delay="0.1">
-          <Heading as="h3" variant="section-title">
+          <Heading as="h3" mt={[16, 16, 0]} variant="section-title">
             Alguns Projetos
           </Heading>
           <ProjectsDemo />
