@@ -10,6 +10,8 @@ const jobs = [
     at: "GoGeo",
     stack: [
       { tech: "React.js", image: "react" },
+      { tech: "Next.js", image: "next-js" },
+      { tech: "Redux", image: "redux" },
       { tech: "Angular", image: "angular" },
     ],
   },
