@@ -57,7 +57,7 @@ export function Navbar({ path, ...props }: NavbarProps) {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="#skills" path={path}>
-            Habilidades
+            Habilidades/Experiências
           </LinkItem>
           <LinkItem href="/works" path={path}>
             Projetos
