@@ -1,10 +1,17 @@
-import { Button, Flex, Image, useColorModeValue } from "@chakra-ui/react";
+import {
+  Button,
+  Flex,
+  Heading,
+  Image,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { StackList } from "./StackList";
 
 export function ProjectsDemo() {
   return (
-    <Flex>
+    <Flex mt={28} mb={16}>
       <Swiper
         modules={[Pagination, Navigation]}
         pagination={{ clickable: true }}
@@ -12,23 +19,37 @@ export function ProjectsDemo() {
         navigation
       >
         <SwiperSlide>
-          <Flex w="full" h="450px" gap={24} align="center" justify="center">
+          <Flex gap={16} align="center" justify="center">
             <Image
-              w="250px"
-              h="200px"
+              w="450px"
+              h="300px"
               src="/projects/world-trip-demo.png"
               alt="Profile image"
+              borderRadius="10"
             />
-            <Button
-              w="180px"
-              height="45px"
-              bg={useColorModeValue("purple.500", "greenLigth.600")}
-              _hover={{ bg: useColorModeValue("purple.700", "greenLigth.700") }}
-              color={useColorModeValue("whiteAlpha.900", "whiteAlpha.900")}
-              mt={8}
-            >
-              Ver Projeto
-            </Button>
+            <Flex flexDir="column">
+              <Heading mb={2}>World Trip</Heading>
+              <StackList
+                stack={[
+                  { tech: "React.js", image: "react" },
+                  { tech: "Next.js", image: "next-js" },
+                  { tech: "Chakra UI", image: "chakra" },
+                  { tech: "Figma", image: "figma" },
+                ]}
+              />
+              <Button
+                w="180px"
+                height="45px"
+                mt={10}
+                bg={useColorModeValue("purple.500", "greenLigth.600")}
+                _hover={{
+                  bg: useColorModeValue("purple.700", "greenLigth.700"),
+                }}
+                color={useColorModeValue("whiteAlpha.900", "whiteAlpha.900")}
+              >
+                Ver Projeto
+              </Button>
+            </Flex>
           </Flex>
         </SwiperSlide>
         <SwiperSlide>Hello2</SwiperSlide>
