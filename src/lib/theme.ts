@@ -58,9 +58,11 @@ const fonts = {
 
 const colors = {
   grassTeal: "#88ccca",
-  greenLigth400: "#7CB591",
-  greenLigth600: " #407253",
-  greenLigth700: "#2e523b",
+  greenLigth: {
+    400: "#7CB591",
+    600: "#407253",
+    700: "#2e523b",
+  },
 };
 
 const config: ThemeConfig = {

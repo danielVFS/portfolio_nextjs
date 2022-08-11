@@ -22,8 +22,8 @@ export function ProjectsDemo() {
             <Button
               w="180px"
               height="45px"
-              bg={useColorModeValue("purple.500", "greenLigth600")}
-              _hover={{ bg: useColorModeValue("purple.700", "greenLigth700") }}
+              bg={useColorModeValue("purple.500", "greenLigth.600")}
+              _hover={{ bg: useColorModeValue("purple.700", "greenLigth.700") }}
               color={useColorModeValue("whiteAlpha.900", "whiteAlpha.900")}
               mt={8}
             >

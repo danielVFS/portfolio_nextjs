@@ -49,8 +49,8 @@ export default function Bio() {
           w="180px"
           height="45px"
           rightIcon={<DownloadIcon />}
-          bg={useColorModeValue("purple.500", "greenLigth600")}
-          _hover={{ bg: useColorModeValue("purple.700", "greenLigth700") }}
+          bg={useColorModeValue("purple.500", "greenLigth.600")}
+          _hover={{ bg: useColorModeValue("purple.700", "greenLigth.700") }}
           color={useColorModeValue("whiteAlpha.900", "whiteAlpha.900")}
           mt={8}
         >
@@ -63,7 +63,7 @@ export default function Bio() {
           src="/images/profile.jpg"
           alt="Profile image"
           mt={[8, 8, 0]}
-          borderColor={useColorModeValue("whiteAlpha.800", "greenLigth400")}
+          borderColor={useColorModeValue("whiteAlpha.800", "greenLigth.400")}
           borderWidth={3}
           borderStyle="solid"
           maxW={["120px", "120px", "150px"]}
