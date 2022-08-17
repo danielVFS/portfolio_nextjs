@@ -1,8 +1,8 @@
 import { Container, Heading } from "@chakra-ui/react";
 import type { NextPage } from "next";
-import { SkillsAndExperience } from "../components/home/SkillsAndExperience";
 import { Layout } from "../components/layouts/Layout";
 import { Section } from "../components/Section";
+import { WorksList } from "../components/works/WorksList";
 
 const Works: NextPage = () => {
   return (
@@ -12,7 +12,7 @@ const Works: NextPage = () => {
           <Heading as="h3" variant="section-title">
             Trabalhos
           </Heading>
-          <SkillsAndExperience />
+          <WorksList />
         </Section>
       </Container>
     </Layout>
