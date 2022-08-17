@@ -9,7 +9,7 @@ const Works: NextPage = () => {
     <Layout title="Trabalhos">
       <Container maxW="1200px" display="flex" flexDir="column" gap={6} mt={6}>
         <Section id="works" delay="0.1">
-          <Heading as="h3" variant="section-title">
+          <Heading as="h3" variant="section-title" mb={12}>
             Trabalhos
           </Heading>
           <WorksList />
