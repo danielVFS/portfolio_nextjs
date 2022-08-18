@@ -13,7 +13,7 @@ import { StackList } from "../StackList";
 
 export function WorksList() {
   return (
-    <Grid templateColumns="repeat(2, 1fr)" gap={6}>
+    <Grid templateColumns="repeat(3, 1fr)" gap={6}>
       <GridItem
         py={4}
         px={4}
