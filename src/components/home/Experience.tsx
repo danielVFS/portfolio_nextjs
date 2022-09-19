@@ -1,5 +1,5 @@
 import { Flex } from "@chakra-ui/react";
-import { jobs } from "../../core/data/ExperienceData";
+import { jobs } from "../../core/data/jobs";
 import { ExperienceDescription } from "./ExperienceDescription";
 import { Timeline } from "./Timeline";
 

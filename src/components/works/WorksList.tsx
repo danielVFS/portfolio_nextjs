@@ -8,7 +8,7 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { projects } from "../../core/data/ProjectsData";
+import { projects } from "../../core/data/projects";
 import { StackList } from "../StackList";
 
 export function WorksList() {
