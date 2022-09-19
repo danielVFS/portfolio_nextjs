@@ -1,4 +1,6 @@
-export const projects = [
+import { Project } from "../models/Project";
+
+export const projects: Project[] = [
   {
     image: "world-trip-demo",
     project_name: "World Trip",
